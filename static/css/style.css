@@ -1,0 +1,53 @@
+:root {
+    /* Color Palllete */
+    --deep-twilight: #363062;
+    --twilight-blue: #435585;
+    --dusky-sky: #818FB4;
+    --pale-parchment: #F5E8C7;
+    --danger: #FF0000;
+    --success: #008800;
+
+    /* Color Intentions */
+    --background: var(--pale-parchment);
+    --text: var(--deep-twilight);
+    --lineColor: var(--dusky-sky);
+    --blockquote: var(--twilight-blue);
+    --block-text: var(--pale-parchment);
+    --card-bg: var(--dusky-sky);
+    --card-bg: var(--light-parchment);
+    --header-bg: var(--twilight-blue);
+    --header-fg: var(--pale-parchment);
+    --footer-bg: var(--dusky-sky);
+    --footer-fg: var(--pale-parchment);
+    --linkColor: var(--twilight-blue);
+    --linkHover: var(--twilight-blue);
+    --navLinkColor: var(--pale-parchment);
+    --authorColor: var(--twilight-blue);
+    --buttonColor: var(--twilight-blue);
+    --buttonHoverColor: var(--deep-twilight);
+    --buttonDisabledColor: var(--dusky-sky);
+
+    /*Styles*/
+    --line: solid 1px var(--lineColor);
+    --headerHeight: 5rem;
+    --containerPadding: 10vw;
+
+    --boxShadow: 0 2px 18px rgb(34 34 34 / 20%);
+    --cardTransition: box-shadow 200ms;
+
+    /* Fonts */
+    --headingFont: 'Source Sans Pro', sans-serif;
+    --bodyFont: 'Libre Baskerville', serif;
+    --baseFontSize: 100%;
+    --h1: 3.052rem;
+    --h2: 2.441rem;
+    --h3: 1.953rem;
+    --h4: 1.563rem;
+    --h5: 1.25rem;
+    --smallText: 0.8rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}

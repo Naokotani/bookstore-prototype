@@ -1,0 +1,17 @@
+* Install
+You should just be able to =git clone= this and, if you have node installed,
+cd into the project and run =npm install= and =node index.js= to launch the app.
+
+Once it is running you can just go to localhost:3000 in your browser and it should load. Important to note that the actual location is =http://localhost:3000= but the browser adds the first bit for you.
+
+* Static
+Most of the data is in the static folder and is automagically served by =express.static()=. Make sure you have the path and names exactly correct when you add it to your html.
+
+* New routes
+You can create other routes using a new =app.get('/otherroute')= and you can either serve stuff in the static folder or do things with the it on the serve by loading the files with =fs.readFile()= in a similar way to how you loaded the csv file. =fs.readFile()= will return a string, which can be directly returned or you can do whatever yo udo with strings.
+
+* Templates
+You can also generate the html on the server side and use a [[https://github.com/janl/mustache.js][template engine]]  like mustache to generate the html. This is more of a real world approach, but will require a bit more effort to get set up.
+
+* Kind of fake
+In a real world app, you would not just use a shared object like this, but would put the data in a database like SQLite or Postgres.  For the purposes of demonstration where only one person is using the app this should be fine. If you wanted to put the data in sql and you are using node, [[https://www.npmjs.com/package/sqlite3][this node module]] would be what make the most sense to use. Postgres or mySQL are much more complicated to set up and I don't really recommend them for this.
