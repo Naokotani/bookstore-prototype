@@ -4,6 +4,9 @@ cd into the project and run =npm install= and =node index.js= to launch the app.
 
 Once it is running you can just go to localhost:3000 in your browser and it should load. Important to note that the actual location is =http://localhost:3000= but the browser adds the first bit for you.
 
+* Notes
+There are a bunch of notes in the index.js file in the root directory
+
 * Static
 Most of the data is in the static folder and is automagically served by =express.static()=. Make sure you have the path and names exactly correct when you add it to your html.
 
